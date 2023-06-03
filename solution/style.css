@@ -1,0 +1,132 @@
+:root
+{
+
+/* ### Primary */
+
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+
+  /* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+}
+
+*,
+*::before,
+*::after
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html
+{
+  font-size: 62.5%;
+}
+body
+{
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  background-color: var(--Light-grey);
+  color: var(--Off-black);
+}
+
+/* utility tools */
+
+.mb-sm{margin-bottom: 1rem;}
+.mb-md{margin-bottom: 4rem;}
+
+
+.calculator
+{
+  max-width: 85rem;
+  margin: 10rem auto;
+  padding: 5rem;
+  border-radius: 0 0 15rem 0;
+  background-color: var(--White);
+}
+.form
+{
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+.form__groups
+{
+  /* display: flex; */
+  padding-right: 20rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+
+}
+.form__label
+{
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.form__input
+{
+  padding: 2rem 1rem;
+  border: 1px solid var(--Light-grey);
+  border-radius: 1rem;
+  outline: none;
+  transition: all .2s;
+}
+.form__input:focus
+{
+  border-color: var(--Purple);
+}
+.form__error-message
+{
+  font-size: 1.2rem;
+  color: var(--Light-red);
+}
+.form__error-message.hidden
+{
+  display: none;
+}
+.form__label.error
+{
+  color: var(--Light-red);
+}
+.form__input.error
+{
+  border-color: var(--Light-red);
+}
+.form__button
+{
+  border: none;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(50%);
+  color: var(--Off-white);
+  background-color: var(--Purple);
+  transition: all .2s;
+}
+.form__button:hover
+{
+  background-color: var(--Off-black);
+}
+
+.dates-list
+{
+  list-style: none;
+  margin-top: 4rem;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.dates__value
+{
+  color: var(--Purple);
+}

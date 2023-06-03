@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <form action="#" class="form">
+      <div class="form__groups mb-md">
+        <div class="form__group">
+          <label for="day" class="form__label mb-sm">Day</label>
+          <input 
+            type="number" 
+            name="day" id="day" 
+            class="form__input form__input--day mb-sm" 
+            placeholder="DD">
+            <p class="form__error-message hidden">This field is required</p>
+        </div>
+        <div class="form__group">
+          <label for="month" class="form__label mb-sm">Month</label>
+          <input 
+            type="number" 
+            name="month" id="month" 
+            class="form__input form__input--month mb-sm" 
+            placeholder="MM">
+            <p class="form__error-message hidden">This field is required</p>
+        </div>
+        <div class="form__group">
+          <label for="year" class="form__label mb-sm">Year</label>
+          <input 
+            type="number" 
+            name="year" id="year" 
+            class="form__input form__input--year mb-sm" 
+            placeholder="YYYY">
+            <p class="form__error-message hidden">This field is required</p>
+        </div>
+        <button class="form__button">btn</button>
+      </div>
+    </form>
+    <ul class="dates-list">
+      <li class="dates__item day"><span class="dates__value day__value">--</span>day</li>
+      <li class="dates__item month"><span class="dates__value month__value">--</span>day</li>
+      <li class="dates__item year"><span class="dates__value year__value">--</span>year</li>
+    </ul>
+  </main>
+  <script src="script.js"></script>
+  
+</body>
+</html>
