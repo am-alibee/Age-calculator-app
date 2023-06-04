@@ -34,7 +34,7 @@ const validateInput = function(){
         if(value > 1 && value <= 31){
           console.log('date is working');
         }else{
-          console.log(`${input.id} no dey work 00`);
+          console.log(`${input.id} no dey work 000`);
         }
       }else if(input.id === 'month'){
         if(value > 1 && value <= 12){
